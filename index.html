@@ -14,10 +14,66 @@
     <body>
 
         <div class="animationContainer">
+        <div id="cloud1"></div>
+        <div id="cloud2"></div>
+        <div id="cloud3"></div>
+        <div id="cloud4"></div>
 
         </div>
         <script src="javascript/jquery.js"></script>
+        <script src="javascript/vivus.js"></script>
         <script src="javascript/script.js"></script>
+        <script>
+        var drawDuration = 140;
 
+        new Vivus('cloud1', {
+          file: 'images/cloud.svg',
+        	duration: drawDuration,
+        	start: 'autostart',
+        	type: 'scenario-sync',
+        }, function(){
+          $("#cloud1").addClass("translateLeftInfinite");
+        });
+        new Vivus('cloud2', {
+          file: 'images/cloud.svg',
+          duration: drawDuration,
+          start: 'autostart',
+          type: 'scenario-sync',
+        }, function(){
+          $("#cloud2").addClass("translateLeftInfinite");
+        });
+        new Vivus('cloud3', {
+          file: 'images/cloud.svg',
+          duration: drawDuration,
+          start: 'autostart',
+          type: 'scenario-sync',
+        }, function(){
+          $("#cloud3").addClass("translateLeftInfinite");
+        });
+        new Vivus('cloud4', {
+          file: 'images/cloud.svg',
+          duration: drawDuration,
+          start: 'autostart',
+          type: 'scenario-sync',
+        }, function(){
+          $("#cloud4").addClass("translateLeftInfinite");
+        });
+
+/*
+        function animateObj(objID,classToAdd){
+          var myAnim = new Vivus(objID, {
+            file: 'images/cloud.svg',
+            duration: 140,
+            start: 'autostart',
+            type: 'scenario-sync',
+          }, function(){
+            //$("#"+objID).addClass(classToAdd);
+          });
+          myAnim.play();
+        }
+
+        animateObj("cloud1","translateLeftInfinite");*/
+        myAnim.play();
+        </script>
     </body>
 </html>
