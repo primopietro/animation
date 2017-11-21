@@ -26,54 +26,22 @@
         <script>
         var drawDuration = 140;
 
-        new Vivus('cloud1', {
-          file: 'images/cloud.svg',
-        	duration: drawDuration,
-        	start: 'autostart',
-        	type: 'scenario-sync',
-        }, function(){
-          $("#cloud1").addClass("translateLeftInfinite");
-        });
-        new Vivus('cloud2', {
-          file: 'images/cloud.svg',
-          duration: drawDuration,
-          start: 'autostart',
-          type: 'scenario-sync',
-        }, function(){
-          $("#cloud2").addClass("translateLeftInfinite");
-        });
-        new Vivus('cloud3', {
-          file: 'images/cloud.svg',
-          duration: drawDuration,
-          start: 'autostart',
-          type: 'scenario-sync',
-        }, function(){
-          $("#cloud3").addClass("translateLeftInfinite");
-        });
-        new Vivus('cloud4', {
-          file: 'images/cloud.svg',
-          duration: drawDuration,
-          start: 'autostart',
-          type: 'scenario-sync',
-        }, function(){
-          $("#cloud4").addClass("translateLeftInfinite");
-        });
-
-/*
-        function animateObj(objID,classToAdd){
-          var myAnim = new Vivus(objID, {
-            file: 'images/cloud.svg',
-            duration: 140,
+        function animateObj(objID,img,classToAdd){
+          new Vivus(objID, {
+            file: 'images/'+img+'.svg',
+            duration: drawDuration,
             start: 'autostart',
             type: 'scenario-sync',
           }, function(){
-            //$("#"+objID).addClass(classToAdd);
+            $("#"+objID).addClass(classToAdd);
           });
-          myAnim.play();
         }
 
-        animateObj("cloud1","translateLeftInfinite");*/
-        myAnim.play();
+        animateObj("cloud1","cloud","translateLeftInfinite");
+        animateObj("cloud2","cloud","translateLeftInfinite");
+        animateObj("cloud3","cloud","translateLeftInfinite");
+        animateObj("cloud4","cloud","translateLeftInfinite");
+
         </script>
     </body>
 </html>
