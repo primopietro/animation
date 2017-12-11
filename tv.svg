@@ -1,0 +1,57 @@
+<html>
+	<body>
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920px" height="1080px" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid meet">
+		
+			<!-- BACKGROUND CIRCLE -->
+			<circle id="svgEditorBackground" cx="950" cy="500" r="750" style="fill: yellow; stroke: none;"/>
+		
+			
+			
+			<!--wall-->
+			<line id="corner_wall" x1="400" y1="0" x2="400" y2="650" style="stroke:black;fill:none;stroke-width:2px;"/>
+			<line id="corner_wall_bottom" x1="400" y1="650" x2="260" y2="790" style="stroke:black;fill:none;stroke-width:2px;"/>
+			<line id="wall_bottom" x1="400" y1="650" x2="1685" y2="650" style="stroke:black;fill:none;stroke-width:2px;"/>
+			
+			
+			<!-- TV -->
+			<rect id="TV" x="730" y="150" width="450" height="250" style="fill: blue; stroke: black;stroke-width:10px;"/>
+			
+			<g transform="translate(160, 100)">
+				<rect id="tabletop" x="422" y="450" width="767" height="15" style="fill: brown; stroke: black;stroke-width:2px;"/>
+				<rect id="tableFeet" x="520" y="465" width="40" height="190" style="fill: brown; stroke: black;stroke-width:1px;"/>
+				<use x="531" y="0" href="#tableFeet" />
+				
+				<g id="first_dude" transform="translate(0,120)">
+					<polygon points="486,285 631,222 537,320" style="fill:lightblue;stroke:none;"/>
+					<path d="M628,224q-101,-47,-142,61" style="fill:lightblue;stroke:black;stroke-width:1px;" id="e10_arc2"/>
+					<path d="M486,284q-21,59,51,35" style="fill:lightblue;stroke:black;stroke-width:1px;" id="e17_arc2"/>
+					<path d="M537,319q160,-51,91,-95" style="fill:lightblue;stroke:black;stroke-width:1px;" id="e21_arc2"/>
+					<path d="M602,294q44,6,32,-18" style="fill:lightblue;stroke:black;stroke-width:1px;" id="e26_arc2"/>
+					<path d="M520,324q40,2,45,-13" style="fill:lightblue;stroke:black;stroke-width:1px;" id="e27_arc2"/>
+					<path d="M555,273q45,-6,59,-15" style="fill:lightblue;stroke:none;" id="e31_arc2"/>
+				</g>
+			
+			
+				<g id="second_dude" transform="translate(30,150)">
+					<polygon points="980,263 800,202 903,285" style="fill:pink;stroke:none;"/>
+					<path d="M800,203q97,-48,179,61" style="fill:pink;stroke:black;stroke-width:1px;" id="e34_arc2"/>
+					<path d="M979,263.75q36,46.25,-78,21.25" style="fill:pink;stroke:black;stroke-width:1px;" id="e35_arc2"/>
+					<path d="M801,203q-68,38,102,82" style="fill:pink;stroke:black;stroke-width:1px;" id="e38_arc2"/>
+					<path d="M799,247q-6,24,30.25,15" style="fill:pink;stroke:black;stroke-width:1px;" id="e39_arc2"/>
+					<path d="M907.0929565429688,286.53026580810547q11.25,14,27.5,5" style="fill:pink;stroke:black;stroke-width:1px;" id="e40_arc2"/>
+					<path d="M814,231q34,15.25,46,12" style="fill:pink;stroke:none;" id="e44_arc2"/>
+				</g>
+			</g>
+			
+			<g id="first_dialog" transform="translate(750, 0)">
+				<ellipse id="e1_ellipse" cx="607.0104093554" cy="292.3576403289" style="fill:white;stroke:black;stroke-width:1px;" rx="190" ry="88"/>
+				<circle id="e2_circle" cx="403.01" cy="360.358" style="fill:white;stroke:black;stroke-width:1px;" r="32.249"/>
+				<circle id="e3_circle" cx="349.01" cy="408.358" style="fill:white;stroke:black;stroke-width:1px;" r="21.587"/>
+				<text y="240" font-family="Verdana" font-size="25">
+					<tspan x="460" dy="1.4em">I hate this weather.</tspan> 
+					<tspan x="460" dy="1.4em">We should move to L.A!</tspan>
+				</text>
+			</g>
+		</svg>
+	</body>
+</html>
