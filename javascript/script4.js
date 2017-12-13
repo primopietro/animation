@@ -1,4 +1,4 @@
-function beginPartTwo(){
+function beginPartFour(){
 	convoOne();
 	
 }
@@ -56,14 +56,14 @@ function convoTwo(){
 		$('#e2_ellipse').css("fill","white");
   	},1300);
 	setTimeout(function(){
-		goToPartThree();
+		//goToPartFive();
 	},2000);
 	
 	
 }
-function goToPartThree(){
+function goToPartFive(){
 	setTimeout(function(){
-		window.location = "part3.html";
+		window.location = "part5.html";
 	}, 11000);
 }
 
