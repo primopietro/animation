@@ -25,7 +25,29 @@ body,html{
 #moon_arc2.animated{
 	fill:#252d2f !important;
 }
+#moon_arc3.animated{
+	fill:lightblue !important;
+}
 
 [href='#window'].lightIsOn{
-	fill:yellow;
+	fill:yellow !important;
+}
+#svgEditorBackground2.animated{
+	fill:lightblue !important;
+}
+
+#sun2{
+	
+	transform:translatex(+29vw) translatey(-77vh);
+}
+#sun2.animated{
+	
+	transform:translatex(-0.1vw) translatey(+0.1vh);
+
+}
+
+#moon2.animated{
+	opacity:0;
+	transform:translatex(-29vw) translatey(+77vh);
+	
 }

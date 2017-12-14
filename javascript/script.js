@@ -13,7 +13,7 @@ function startStory(){
 }
 function transitionSecondPart(){
 	$("#actualCitySVG").css("transition-delay","2s");
-	$("#actualCitySVG").css("transition-duration","10s");
+	$("#actualCitySVG").css("transition-duration","15s");
 	
 	var width = $(window).width();
 	var height = $(window).height();
@@ -21,8 +21,8 @@ function transitionSecondPart(){
 	
 	
 	
-	widthTranslate = width*30.3;
-	heightTranslate = height*37.7;
+	widthTranslate = width*36;
+	heightTranslate = height*52;
 	
 	$("#actualCitySVG").css("width",(width*100)+"px");
 	$("#actualCitySVG").css("height",(height*100)+"px");
@@ -42,7 +42,7 @@ function animateWindows(){
 	setTimeout(function(){
 		 
 		 
-		var x = 0;
+		/*var x = 0;
 		
 		for(var i=0;i<Math.floor((Math.random() * 27) + 13);++i){
 			
@@ -66,7 +66,8 @@ function animateWindows(){
 				  $(this).addClass("lightIsOn");
 			}
 		
-		});
+		});*/
+		$(".lightIsOff").toggleClass('lightIsOff lightIsOn');
 		 
 	}, 800);
 	

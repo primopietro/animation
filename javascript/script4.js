@@ -56,7 +56,7 @@ function convoTwo(){
 		$('#e2_ellipse').css("fill","white");
   	},1300);
 	setTimeout(function(){
-		//goToPartFive();
+		goToPartFive();
 	},2000);
 	
 	

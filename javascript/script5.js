@@ -1,10 +1,65 @@
-import { TweenLite, CSSPlugin, Power4 } from "greensock";
+
 function beginPartFive(){
-	var tl = new TimelineMax({delay:.5}),
-    svgRoot = document.getElementById("part5Svg");
-TweenMax.set(svgRoot,{attr:{viewBox:"250 0 250 250"}});
-tl.to(svgRoot, 1.5, {attr:{ viewBox:"0 0 1000 1000"}})
-  .to(svgRoot, 1.2, {attr:{ viewBox:"500 500 250 250"}},"+=.5")
-  .to(svgRoot, 1, {attr:{ viewBox:"750 500 250 250"},ease:Power2.easeInOut},"+=.5")
-  .to(svgRoot, 1, {attr:{ viewBox:"0 0 1000 1000"},ease:Power1.easeOut},"+=.5");
+	transitionSecondPart();
+	
+	
+	setTimeout(function(){
+		animateWindows();
+		changeMainBackground();
+		animateSun();
+		animateMoon();
+		
+	}, 12000);
+	
+	
 }
+function transitionSecondPart(){
+	$("#actualCitySVG").css("transition-delay","2s");
+	$("#actualCitySVG").css("transition-duration","10s");
+	
+	var width = $(window).width();
+	var height = $(window).height();
+	
+	
+	
+	
+	widthTranslate = width/30.3;
+	heightTranslate = height/37.7;
+	
+	$("#actualCitySVG").css("width",(100)+"vw");
+	$("#actualCitySVG").css("height",(100)+"vh");
+	
+	$("#actualCitySVG").css("transform","translatex(+"+widthTranslate+"px) translatey(+"+heightTranslate+"px)");
+	
+	
+	
+}
+
+function animateWindows(){
+	setTimeout(function(){
+		 
+		$(".lightIsOn").removeClass("lightIsOn");
+		 
+	}, 1500);
+	
+	
+
+}
+
+function changeMainBackground(){
+	$("#svgEditorBackground2").addClass("animated");
+	$("#moon_arc3").addClass("animated");
+	
+}
+function animateSun(){
+	$("#sun2").addClass("animated");
+}
+
+function animateMoon(){
+	$("#moon2").addClass("animated");
+}
+
+
+$(function() {
+   setTimeout(beginPartFive, 1000);
+})

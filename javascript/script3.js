@@ -22,7 +22,10 @@ function convoOne(){
         $('#e1_ellipse').css("fill-opacity","1");
 		$('#e1_ellipse').css("fill","white");
   	},1800);
-	goToPartFour();
+	setTimeout(function(){
+		goToPartFour();
+  	},2500);
+	
 }
 function toggleAnimateThing(anID){
 	setTimeout(function(){
