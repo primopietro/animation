@@ -124,7 +124,10 @@ body,html{
     stroke-dashoffset: 0;
   }
 }
-
+#first_dude,#second_dude,#table_chevet{
+	-webkit-filter: drop-shadow(17px 15px 10px rgba(0,0,0,0.7));
+filter: drop-shadow(17px 15px 10px rgba(0,0,0,0.7));
+}
 
 
 
