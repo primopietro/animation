@@ -57,7 +57,7 @@ function convoTwo(){
   	},950);
 	setTimeout(function(){
 		goToPartFive();
-	},2000);
+	},2500);
 	
 	
 }
