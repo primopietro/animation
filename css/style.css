@@ -51,3 +51,81 @@ body,html{
 	transform:translatex(-29vw) translatey(+77vh);
 	
 }
+
+.path {
+  stroke: black!important;
+  stroke-dasharray: 150;
+  stroke-dashoffset: 150;
+  animation: dash 0.5s linear forwards;
+  animation-delay: 0.5s;
+}
+
+.path2 {
+  stroke: black!important;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: dash 0.5s linear forwards;
+  animation-delay: 1s;
+}
+
+.path3 {
+  stroke: black!important;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 0.5s linear forwards;
+  animation-delay: 1.5s;
+}
+
+
+.path4 {
+  stroke: black!important;
+  stroke-dasharray: 150;
+  stroke-dashoffset: 150;
+  animation: dash 0.5s linear forwards;
+  animation-delay: 0.5s;
+}
+
+.path5 {
+  stroke: black!important;
+  stroke-dasharray: 220;
+  stroke-dashoffset: 220;
+  animation: dash 0.5s linear forwards;
+  animation-delay: 1s;
+}
+
+.path6 {
+  stroke: black!important;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 0.5s linear forwards;
+  animation-delay: 1.5s;
+}
+
+.path7 {
+  stroke: black!important;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: dash 0.5s linear forwards;
+  animation-delay: 4s;
+}
+
+
+.path8 {
+  stroke: black!important;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 0.5s linear forwards;
+  animation-delay: 4.5s;
+}
+
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+
+

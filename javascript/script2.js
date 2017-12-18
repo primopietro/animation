@@ -7,24 +7,24 @@ function convoOne(){
 		toggleAnimateThing("first_dude");
         $('#e3_circle').css("fill-opacity","1");
 		$('#e3_circle').css("fill","white");
-    },200);
+    },450);
 	setTimeout(function(){
 		toggleAnimateThing("first_dude");
         $('#e2_circle').css("fill-opacity","1");
 		$('#e2_circle').css("fill","white");
-    },500);
+    },900);
 	setTimeout(function(){
 		toggleAnimateThing("first_dude");
         $('#textOne').css("fill-opacity","1");
-	},1300);
+	},1350);
 	setTimeout(function(){
 		toggleAnimateThing("first_dude");
         $('#e1_ellipse').css("fill-opacity","1");
 		$('#e1_ellipse').css("fill","white");
-  	},1800);
+  	},1400);
 	setTimeout(function(){
 		convoTwo();
-	},3000);
+	},3500);
 	
 }
 function toggleAnimateThing(anID){
@@ -45,16 +45,16 @@ function convoTwo(){
 		toggleAnimateThing("second_dude");
         $('#e4_circle').css("fill-opacity","1");
 		$('#e4_circle').css("fill","white");
-    },200);
+    },450);
 	setTimeout(function(){
 		toggleAnimateThing("second_dude");
         $('#textTwo').css("fill-opacity","1");
-	},700);
+	},900);
 	setTimeout(function(){
 		toggleAnimateThing("second_dude");
         $('#e2_ellipse').css("fill-opacity","1");
 		$('#e2_ellipse').css("fill","white");
-  	},1300);
+  	},950);
 	setTimeout(function(){
 		goToPartThree();
 	},2000);

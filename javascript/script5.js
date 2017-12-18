@@ -8,7 +8,7 @@ function beginPartFive(){
 		changeMainBackground();
 		animateSun();
 		animateMoon();
-		
+		goToPartStart();
 	}, 12000);
 	
 	
@@ -63,3 +63,9 @@ function animateMoon(){
 $(function() {
    setTimeout(beginPartFive, 1000);
 })
+
+function goToPartStart(){
+	setTimeout(function(){
+		window.location = "index.html";
+	}, 11000);
+}
