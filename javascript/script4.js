@@ -1,9 +1,13 @@
 function beginPartFour(){
+	var audio = new Audio('zapzap.mp3');
+	audio.play();
 	convoOne();
 	
 }
 function convoOne(){
 	setTimeout(function(){
+		var voice1 = new Audio('voice1.mp3');
+		voice1.play();
 		toggleAnimateThing("first_dude");
         $('#e3_circle').css("fill-opacity","1");
 		$('#e3_circle').css("fill","white");
@@ -43,6 +47,8 @@ function convoTwo(){
 	
 	setTimeout(function(){
 		toggleAnimateThing("second_dude");
+		var voice2 = new Audio('voice2.mp3');
+		voice2.play();
         $('#e4_circle').css("fill-opacity","1");
 		$('#e4_circle').css("fill","white");
     },450);
