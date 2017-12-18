@@ -1,6 +1,8 @@
 function beginPartTree(){
 	var audio = new Audio('zapzap.mp3');
 	audio.play();
+	var tv1 = new Audio('tv1.mp3');
+	tv1.play();
 	convoOne();
 	
 }

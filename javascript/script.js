@@ -1,5 +1,7 @@
 
 function startStory(){
+	var pop = new Audio('pop.mp3');
+	pop.play();
 	changeMainBackground();
 	animateSun();
 	animateMoon();
